@@ -1,0 +1,27 @@
+# FastAPI Backend
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Vector Database (lightweight, no ONNX runtime needed)
+# Using numpy-based vector store for Python 3.14 compatibility
+
+# Embeddings: Using Ollama's built-in embedding API (no additional deps needed)
+# No external embedding library required - Ollama handles embeddings
+
+# PDF Processing  
+PyMuPDF>=1.24.0
+pypdf>=3.17.0
+
+# LangChain for text splitting
+langchain>=0.1.0
+langchain-text-splitters>=0.0.1
+
+# HTTP client for Ollama
+httpx>=0.26.0
+aiofiles>=23.2.0
+
+# Utilities
+python-dotenv>=1.0.0

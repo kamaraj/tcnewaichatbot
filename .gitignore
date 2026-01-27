@@ -1,0 +1,29 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+
+# Data directories
+uploads/
+chroma_db/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
