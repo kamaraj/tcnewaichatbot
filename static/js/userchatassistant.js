@@ -1,6 +1,6 @@
 /**
- * TCA AI Chatbot - Frontend Application
- * Handles file upload, chat functionality, and UI interactions
+ * TCA AI Chatbot - User Assistant Frontend
+ * Handles chat functionality without sidebar/upload controls
  */
 
 // API Base URL
@@ -11,14 +11,6 @@ const chatMessages = document.getElementById('chatMessages');
 const chatForm = document.getElementById('chatForm');
 const userInput = document.getElementById('userInput');
 const sendBtn = document.getElementById('sendBtn');
-const fileInput = document.getElementById('fileInput');
-const uploadZone = document.getElementById('uploadZone');
-const uploadProgress = document.getElementById('uploadProgress');
-const documentsList = document.getElementById('documentsList');
-const docCount = document.getElementById('docCount');
-const statusCard = document.getElementById('statusCard');
-const statusIndicator = document.getElementById('statusIndicator');
-const statusDetail = document.getElementById('statusDetail');
 const toastContainer = document.getElementById('toastContainer');
 
 // State
@@ -30,11 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function initializeApp() {
-    // Check health status
+    // Check health status implicitly via chat or initial ping if needed
+    // But since there's no status indicator, we might just skip visual health check or log it
     await checkHealth();
-
-    // Load documents
-    await loadDocuments();
 
     // Setup event listeners
     setupEventListeners();
@@ -56,188 +46,31 @@ function setupEventListeners() {
         }
     });
 
-    // File upload
-    uploadZone.addEventListener('click', () => fileInput.click());
-    fileInput.addEventListener('change', handleFileSelect);
-
-    // Drag and drop
-    uploadZone.addEventListener('dragover', handleDragOver);
-    uploadZone.addEventListener('dragleave', handleDragLeave);
-    uploadZone.addEventListener('drop', handleDrop);
+    // Sample Question clicks (Event Delegation)
+    chatMessages.addEventListener('click', (e) => {
+        if (e.target.classList.contains('sample-question')) {
+            const question = e.target.getAttribute('data-question');
+            if (question) {
+                userInput.value = question;
+                autoResizeTextarea();
+                userInput.focus();
+                // chatForm.dispatchEvent(new Event('submit')); // Removed auto-submit
+            }
+        }
+    });
 }
 
-// Health Check
+// Health Check (Logging only since no UI)
 async function checkHealth() {
     try {
         const response = await fetch(`${API_BASE}/health`);
         const data = await response.json();
 
-        statusCard.className = 'status-card ' + (data.llm.status === 'healthy' ? 'healthy' : 'error');
-        statusIndicator.querySelector('.status-text').textContent =
-            data.llm.status === 'healthy' ? 'Connected' : 'Disconnected';
-        statusDetail.textContent = `LLM: ${data.llm.model || 'Unknown'}`;
-
         if (data.llm.status !== 'healthy') {
             showToast('warning', 'LLM not available. Please ensure Ollama is running with TinyLlama.');
         }
     } catch (error) {
-        statusCard.className = 'status-card error';
-        statusIndicator.querySelector('.status-text').textContent = 'Error';
-        statusDetail.textContent = 'Disconnected';
         console.error('Cannot connect to server');
-    }
-}
-
-// Load Documents
-async function loadDocuments() {
-    try {
-        const response = await fetch(`${API_BASE}/documents`);
-        const documents = await response.json();
-
-        renderDocuments(documents);
-    } catch (error) {
-        console.error('Error loading documents:', error);
-    }
-}
-
-function renderDocuments(documents) {
-    docCount.textContent = documents.length;
-
-    if (documents.length === 0) {
-        documentsList.innerHTML = `
-            <div class="empty-state">
-                <i class="bi bi-inbox"></i>
-                <p>No documents uploaded yet</p>
-            </div>
-        `;
-        return;
-    }
-
-    documentsList.innerHTML = documents.map(doc => `
-        <div class="document-item" data-doc-id="${doc.doc_id}">
-            <i class="bi bi-file-earmark-pdf document-icon"></i>
-            <div class="document-info">
-                <div class="document-name" title="${doc.filename}">${doc.filename}</div>
-                <div class="document-meta">${doc.chunk_count} chunks indexed</div>
-            </div>
-            <button class="btn btn-link document-delete" onclick="deleteDocument('${doc.doc_id}')" title="Delete">
-                <i class="bi bi-trash3"></i>
-            </button>
-        </div>
-    `).join('');
-}
-
-// File Upload
-function handleDragOver(e) {
-    e.preventDefault();
-    uploadZone.classList.add('dragover');
-}
-
-function handleDragLeave(e) {
-    e.preventDefault();
-    uploadZone.classList.remove('dragover');
-}
-
-function handleDrop(e) {
-    e.preventDefault();
-    uploadZone.classList.remove('dragover');
-
-    const files = e.dataTransfer.files;
-    if (files.length > 0) {
-        uploadFile(files[0]);
-    }
-}
-
-function handleFileSelect(e) {
-    const files = e.target.files;
-    if (files.length > 0) {
-        uploadFile(files[0]);
-    }
-}
-
-async function uploadFile(file) {
-    // Validate file type
-    if (!file.name.toLowerCase().endsWith('.pdf')) {
-        showToast('danger', 'Only PDF files are supported');
-        return;
-    }
-
-    // Validate file size (50MB max)
-    if (file.size > 50 * 1024 * 1024) {
-        showToast('danger', 'File size exceeds 50MB limit');
-        return;
-    }
-
-    // Show progress
-    uploadZone.classList.add('d-none');
-    uploadProgress.classList.remove('d-none');
-
-    const progressBar = uploadProgress.querySelector('.progress-bar');
-    const statusText = uploadProgress.querySelector('.upload-status');
-
-    try {
-        progressBar.style.width = '30%';
-        statusText.textContent = 'Uploading file...';
-
-        const formData = new FormData();
-        formData.append('file', file);
-
-        const response = await fetch(`${API_BASE}/upload`, {
-            method: 'POST',
-            body: formData
-        });
-
-        progressBar.style.width = '70%';
-        statusText.textContent = 'Processing document...';
-
-        const result = await response.json();
-
-        if (response.ok) {
-            progressBar.style.width = '100%';
-            statusText.textContent = 'Complete!';
-
-            showToast('success', `Successfully indexed "${file.name}" (${result.chunks_indexed} chunks)`);
-
-            // Reload documents
-            await loadDocuments();
-
-            // Add confirmation message to chat
-            addMessage('assistant', `📄 Document "${file.name}" has been indexed with ${result.chunks_indexed} chunks. You can now ask questions about it!`);
-        } else {
-            throw new Error(result.detail || 'Upload failed');
-        }
-    } catch (error) {
-        showToast('danger', `Upload failed: ${error.message}`);
-    } finally {
-        // Reset upload zone
-        setTimeout(() => {
-            uploadZone.classList.remove('d-none');
-            uploadProgress.classList.add('d-none');
-            progressBar.style.width = '0%';
-            fileInput.value = '';
-        }, 1000);
-    }
-}
-
-async function deleteDocument(docId) {
-    if (!confirm('Are you sure you want to delete this document?')) {
-        return;
-    }
-
-    try {
-        const response = await fetch(`${API_BASE}/documents/${docId}`, {
-            method: 'DELETE'
-        });
-
-        if (response.ok) {
-            showToast('success', 'Document deleted successfully');
-            await loadDocuments();
-        } else {
-            const error = await response.json();
-            throw new Error(error.detail || 'Delete failed');
-        }
-    } catch (error) {
-        showToast('danger', `Delete failed: ${error.message}`);
     }
 }
 
@@ -321,10 +154,12 @@ async function streamChat(question, typingId) {
                     } else if (data.type === 'sources') {
                         sources = data.sources;
                     } else if (data.type === 'done') {
-                        // Add sources to message
+                        // Sources are hidden per user request
+                        /*
                         if (sources.length > 0) {
                             addSourcesToMessage(messageElement, sources);
                         }
+                        */
                     }
                 } catch (e) {
                     // Ignore parse errors
@@ -458,10 +293,6 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
-function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('open');
-}
-
 function clearChat() {
     // Keep only the welcome message
     const welcomeMessage = chatMessages.querySelector('.message');
@@ -500,6 +331,3 @@ function showToast(type, message) {
         toastElement.remove();
     });
 }
-
-// Refresh health status periodically
-setInterval(checkHealth, 30000);

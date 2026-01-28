@@ -1,0 +1,1322 @@
+[
+  {
+    "question": "How long do you have to catch in liberty?",
+    "expected": "The catch time for liberty is 2 minutes. Section ####",
+    "actual": " DIRECT: In the Western Reining class and Hunter Seat Equitation classes, there is no specific mention of a time limit for catching in liberty. However, it's important to note that riders are expected to maintain control over their horse at all times (Section 6201, page 47).\n\nCOVERAGE: Western Reining Class:\n- The horse and rider should perform the maneuvers as specified in the pattern (Section 6400, Page 52)\n- Failing to complete a maneuver according to the pattern is a major fault (Section 6408, F. Page 58)\n\nHunter Seat Equitation Class:\n- Riders should have light and supple seat and hands (Section 6201, page 47)\n- Riders should maintain control over their horse at all times (Section 6201, page 47)\n- Riders are expected to enter the ring, proceed around it at least once at each appropriate gait, reverse and repeat, and then line up on command (Section 6206, Page 49)",
+    "score": "N/A (No rules in expected)",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 56,
+        "section": "6503",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 56,
+        "section": "6504",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 58,
+        "section": "6507",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 58,
+        "section": "6508",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 52,
+        "section": "6400",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 52,
+        "section": "6403",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6200",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6201",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6202",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 33,
+        "section": "4401",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 54,
+        "section": "6406",
+        "score": 0.83
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 49,
+        "section": "6206",
+        "score": 0.83
+      }
+    ]
+  },
+  {
+    "question": "How can you be disqualified from in hand obstacle",
+    "expected": "The following will result in the exhibitor being excused from the course and disqualified from the class:\n\u25cf\tCarrying a whip or crop . \n\u25cf\tHandler physically moving or coercing the pony/ horse by touching . \n\u25cf\tRefusals of three (3) obstacles . \n\u25cf\tAttendants interfering with the performance of the individual or equine . \n\u25cf\tOff course or horse leaving the obstacle course . \nOff course is defined as: \u2022 Taking an obstacle in the wrong direction . \u2022 Negotiating an obstacle from the wrong side . In Hand Single/Working \u2022 Skipping an obstacle unless directed by the judge . \u2022 Negotiating obstacles in the wrong sequence . \u2022 Off pattern",
+    "actual": " DIRECT: A rider can be disqualified from an in-hand obstacle event if they do not have their mount under sufficient control, as stated in Section 6103, Page 47. This rule applies regardless of the specific obstacle being performed.\n\nCOVERAGE:\n\nIn-Hand Obstacle Disqualification:\n- If a rider does not maintain control over their mount, they can be removed from the ring and disqualified or remounted at the stewards\u2019 discretion (Section 6103, Page 47).\n\nForfeiture of Points:\n- A rider showing in a class for which they are ineligible shall forfeit any points, ribbons, and trophies won in such class. This is applicable under Rule 3401F &7302-F and Section 1309, Page 8 (Note: The specific rules for rider classification and eligibility can be found in Sections 5304, 1304, and 4401).\n\nRider Classification:\n- Show stewards have the power to reclassify riders who are competing at incorrect levels. All points and ribbons won in such classes shall be forfeited (Sections 5304, 1304).\n\nFaults Incurring Major Penalties:\n- Several actions by the rider can lead to major penalties, including excessive speed, unnecessary aid, overly aggressive natural aids, failure to change or correct a missed lead, using a free hand to intimidate or show praise, spurring in front of girth, holding or touching the saddle with either hand except during extended jog or extended lope maneuvers, and running away or failure to guide where it becomes impossible to discern whether rider is on pattern (Sections 6407, 6508).\n\nClass Placement:\n- Riders who incur disqualifying faults will not be placed in the competition (Section 6307).",
+    "score": "N/A (No rules in expected)",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6103",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 8,
+        "section": "1309",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 44,
+        "section": "5304",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1304",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 33,
+        "section": "4401",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 54,
+        "section": "6406",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 58,
+        "section": "6508",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 54,
+        "section": "6407",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 52,
+        "section": "6307",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 58,
+        "section": "6507",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 77,
+        "section": "9102",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 65,
+        "section": "7601",
+        "score": 0.99
+      }
+    ]
+  },
+  {
+    "question": "How tall are the fences in hunter class?\nAnswer: \nThe fence heights for the Hunter class are as follows:\nModern & ASPC: Minimum height is 16 inches and maximum height is 26 inches.\nAMHR \u2013 Over/Under: Minimum height is 12 inches and maximum height is 24 inches. If the height exceeds 24 inches, a second rail is required.\nThis information can be found in the sections regarding Hunter Courses and Fence Heights within the rulebook.",
+    "expected": "Fence heights for Hunters are: \u2022 \nModern & ASPC \u2022 Minimum height 16\" Maximum height 26\" \u2022 AMHR \u2013 Over/Under \u2022 Minimum height 12\" Maximum height 24\"\nIf over 24\" a second rail is required \nAt the discretion of show management, maximum heights may be adjusted . \n\nSection XII. 1.5, c-12\nBad Response 1",
+    "actual": " DIRECT:\n- Modern & ASPC Hunter class fence heights range from a minimum of 16 inches to a maximum of 26 inches. (Section 8102, Page 73)\n- AMHR \u2013 Over/Under Hunter class fence heights range from a minimum of 12 inches to a maximum of 24 inches. If the height exceeds 24 inches, a second rail is required. (Section 8102, Page 73)\n\nCOVERAGE:\n- Fence heights for Hunter classes are provided in Section 8102 on Page 73.\n- The recommended fence materials and requirements, including the need for wings and ground lines, can be found in Section 4308 on Page 32. (Section 4308, Page 32)\n- Eligibility for Hunter Seat Equitation classes is defined in Section 8101 on Pages 71-72. (Section 8101, Pages 71-72)",
+    "score": "N/A (No rules in expected)",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8102",
+        "score": 0.95
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4308",
+        "score": 0.94
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 75,
+        "section": "8102",
+        "score": 0.92
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8100",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 75,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4301",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4302",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4307",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8101",
+        "score": 0.84
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 72,
+        "section": "8101",
+        "score": 0.83
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8103",
+        "score": 0.8
+      }
+    ]
+  },
+  {
+    "question": "Do I need gloves in Showmaship?",
+    "expected": "In section #### It indicates that gloves are optional in showmanship. \n\nBad Response 2",
+    "actual": " DIRECT: The provided rulebook does not specify whether gloves are required in Showmanship.\n\nCOVERAGE (Hunter Seat):\n- 7405 (Page 64) states that at the Regional Show, if all the riders in a class are already qualified for the Zone Show/Western Semi-Finals, the class shall be optional, and results shall not affect Zone eligibility. However, this does not mention gloves.\n- 7602 (Page 67) mentions that hands should be over and in front of the horse's withers, knuckles 30 degrees inside the vertical, hands slightly apart and making a straight line from the horse\u2019s mouth to rider\u2019s elbow. Again, gloves are not mentioned.\n- 8101 (Page 71) defines \"Recognized competitions\" but does not specify dress code requirements for these competitions.\n\nCOVERAGE (Western):\n- 7704 (Page 71) provides a format description and definitions of Western classes, but gloves are not mentioned.\n\nIn summary, the rulebook does not explicitly state that gloves are required in Showmanship or any other class. It is advisable to check with the specific show committee for their dress code requirements.\n\n[Note: Additional relevant sections were found in evidence but might have been summarized above.]",
+    "score": "N/A (No rules in expected)",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 65,
+        "section": "7601",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 69,
+        "section": "7703",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 3,
+        "section": "1201",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 64,
+        "section": "7405",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8101",
+        "score": 0.94
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 35,
+        "section": "4702",
+        "score": 0.91
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 48,
+        "section": "6203",
+        "score": 0.89
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7602",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7603",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7701",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "7704",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1203",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How old does a mini need to be to jump?\nAnswer: \nBased on the rulebook provided, for the Youth Jumper Over Fences Division, the pony (miniature horse) must be two years old or older in order to participate in jumping events. This applies to both the Youth Hunter and Youth Jumper divisions as mentioned in section 3.2.\nRelevant sections of the rulebook:\nSection 3.2 Hunter and Jumper Division A, B: \"Pony must be two years old or older.\"",
+    "expected": "Section XII. 1.5 Hunter & Jumper in Hand (ASPC/AMHR) \nA . General 1 . \nAge \na) ASPC & NSPPR ponies must be two years old or older .\nb) AMHR horses must be three years old or older \n\n\n\n________________________________________\n\nAmy Sherrick - IHSA Rulebook\n\nGood Response",
+    "actual": " Based on the provided rulebook, there is no specific information regarding the age requirement for a mini to jump in the current documents. The rulebook mainly focuses on the requirements for human riders and horses participating in competitions. However, it mentions that ponies (miniature horses) must be two years old or older in order to participate in jumping events in the Youth Jumper Over Fences Division (Section 3.2).\n\nRelevant sections of the rulebook:\n- Section 3.2 Hunter and Jumper Division A, B: \"Pony must be two years old or older.\"\n\n[Note: Additional relevant sections were found in evidence but might have been summarized above.]",
+    "score": "N/A (No rules in expected)",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8101",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 6,
+        "section": "1302",
+        "score": 0.98
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1202",
+        "score": 0.92
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 65,
+        "section": "7601",
+        "score": 0.89
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 35,
+        "section": "4702",
+        "score": 0.87
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7602",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7603",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 28,
+        "section": "4702",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 35,
+        "section": "4703",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 10,
+        "section": "7700",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7700",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "Is there a minimum age requirement for coaches?",
+    "expected": "Yes.  According to Rule 1102.A, all IHSA coaches must be at least 21 years old.",
+    "actual": " DIRECT:\n\n* Yes, there is a minimum age requirement for coaches in the IHSA. All IHSA coaches must be at least 21 years old (Section 1102, Page 1).\n\nCOVERAGE:\n\n**Coach Qualifications**\n- All IHSA coaches must be at least 21 years old (Section 1102, Page 1).\n- All IHSA coaches must pass the online IHSA Coach Rules Test and sign the IHSA liability waiver (Section 1102, Page 1).\n- All IHSA coaches must be an IHSA member (see Rule 1102.G)\n- All IHSA coaches must carry professional liability insurance coverage for coaching activities at IHSA events or show a college/university Certificate of Insurance or be a College or University employee (Section 1102, Page 1).\n- Proof of professional liability insurance must be provided to the Regional President prior to the first competition date of each academic year (Section 1102, Page 1).\n- If the coach on record cannot attend a show date, written consent in the form of faxed or scanned/emailed letter from the Designated College Representative approving the substitute coach shall be sent to the Regional President prior to the competition date (the substitute coach must follow the requirements outlined in A, B, C and D and E) (Section 1102, Page 1).\n- Annually, prior to their first competition, an eligible Head coach must apply for membership on the official IHSA Coach Membership form. The application must be signed by the individual Head coach and must be filed with the President College of the Region. It must include a membership fee of $40.00 $45.00, and payment must be received by the National Treasurer (Section 1102, Page 1).\n- Proof of safe sport education must be provided for coaches who are not employed by the college for which they coach to the regional president prior to the first competition date of each academic year (Section 1102, Page 1).",
+    "score": "PERFECT (All rules found)",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 1,
+        "section": "1102",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1302",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 43,
+        "section": "5302",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1202",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 8,
+        "section": "1402",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1305",
+        "score": 0.98
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 18,
+        "section": "3201",
+        "score": 0.86
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 2,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 3,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 69,
+        "section": "1201",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 1,
+        "section": "2024",
+        "score": 0.8
+      }
+    ]
+  },
+  {
+    "question": "Are medications allowed for the horses?",
+    "expected": "Care and control of horses including any drugs or medications administered shall be the sole prerogative of the horse provider or their designated representative. Administration of drugs and medications shall be limited to therapeutic use only and used for the well-being of the horse. The administration of central nervous system drugs is prohibited in IHSA competition. See Rule 3401.J At the June meeting, the National Steward will randomly select one IHSA competition in each Zone to be tested for CNS drugs. This would require no more than one horse/random selection to be tested. The IHSA will hire the veterinarian, chosen by the show manager, and would receive the results and hand down the appropriate penalties for violations. Rule 4302.",
+    "actual": " DIRECT:\n- Medications for horses are allowed if they are administered by the horse provider or their designated representative for therapeutic use only and not for the enhancement of performance (Section 4302, Page 31)\n- The administration of central nervous system drugs is prohibited in IHSA competition (Section 4302, Page 31 & Section 4904, Page 38)\n- The provider of horses has the sole discretion to determine whether a rider can compete with or without special equipment (Section 1408, Page 9)\n\nCOVERAGE:\n**General Rules Regarding Medications and Horses' Welfare:**\n- Care and control of horses including any drugs or medications administered shall be the sole prerogative of the horse provider or their designated representative (Section 4302, Page 31)\n- Administration of drugs and medications shall be limited to therapeutic use only and used for the well-being of the horse (Section 4302, Page 31)\n- It is the responsibility of all parties concerned to consider the welfare of the horse (Section 4904, Page 27 & Section 4904, Page 38)\n- The administration of central nervous system drugs is prohibited in IHSA competition (Section 4302, Page 31 & Section 4904, Page 38)\n- In each Zone, one horse will be randomly selected for testing CNS drugs (Section 4302, Page 32)\n- It is the responsibility of all parties concerned to be aware of the condition of horses and report any violations immediately to the stewards (Section 4902, Page 27)\n\n**Classes and Competition Rules:**\n- All classes must be conducted according to the rules provided (Section 4301, Page 31)\n- Special classes may be offered if time and horse availability permit but are not covered by IHSA insurance (Section 4307, Page 32)\n- Fences consist of natural posts and rails, painted rails, brush, oxers, coops, gates, walls, aikens. Coops that are hinged at the top and free at the bottom are prohibited (Section 4308, Page 32)\n- All fences must have wings at least 12 inches higher than the top of the fence, and ground lines are mandatory (Section 4308, Page 32)\n- If a violation is observed during the progress of the show, it may result in penalties for violations (Section 4901, Page 27)",
+    "score": "PARTIAL (Found {'4302'}, Missing {'3401'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4302",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 38,
+        "section": "4904",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 33,
+        "section": "4309",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4302",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 9,
+        "section": "1408",
+        "score": 0.9
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 27,
+        "section": "4904",
+        "score": 0.86
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4301",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4307",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4308",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 27,
+        "section": "4901",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 27,
+        "section": "4902",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "Does the Regional President have to be a member of the USHJA?",
+    "expected": "The Regional President must have a membership in the USHJA and/or the American Quarter Horse Association. Rule 2302. A",
+    "actual": " DIRECT:\n\nThe Regional President is not specifically mentioned in the provided documents as requiring membership in the USHJA. (I cannot find specific rules regarding this in the current documents.)",
+    "score": "FAIL (Found set(), Expected {'2302'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1601",
+        "score": 0.96
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1602",
+        "score": 0.93
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 3,
+        "section": "1201",
+        "score": 0.92
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 1,
+        "section": "1101",
+        "score": 0.91
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1604",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1202",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1203",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 2,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 45,
+        "section": "5400",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 45,
+        "section": "5402",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "5403",
+        "score": 0.83
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1600",
+        "score": 0.8
+      }
+    ]
+  },
+  {
+    "question": "How many points do hunt seat riders need to qualify for regionals?",
+    "expected": "Riders are also qualified for Regionals once they have earned the 36 points between the beginner and advanced sections of Classes 2A & 2B. \nRiders in classes 3 - 6 & 11-15 are qualified for Regionals when they have earned 36 points.  Riders in Classes 7 and 8 will start each year with zero points and must acquire 28 to qualify for Regionals.  Rules 7201, 7203 and 7207.\n\n\nBad Response 2",
+    "actual": " DIRECT:\n- Hunt seat riders in Classes 7 and 8 need to acquire a total of 28 points to qualify for Regionals (Section 7501, Page 64).\n\nCOVERAGE:\n**Hunt Seat Riders**\n\n- Riders in these classes start each year with zero points (Section 9102, Page 77).\n- In the event a disparity in shows occurs and no rider qualifies, the number of points may be lowered to qualify the next highest rider(s) with a minimum of 21 points (Section 7207, Page 62).\n- Points transferred from another region will not count toward Regional High Point Rider (Section 7501, Page 64).\n- The Regional High Point Hunter Seat rider from each Region must compete at their Zone Finals in a Qualifying class (Section 7501, Page 64).\n\n**Teams and Points**\n\n- Each qualified Hunter Seat College shall field a team of eight riders, one from each Class 1 through 8. All eight scores shall count (Section 7703, D, Page 69).\n- Champion and Reserve Hunter Seat teams are determined by totaling the scores of the top 7 of the 8 designated point riders from each team (Section 7302, B, Page 63).\n- Points in Classes 2 \u2013 6 carry over from year to year until a total of 36 have been acquired (Section 7205, Page 62).\n\n**Qualifying Out of a Class**\n\n- Upon qualifying out of a class, a rider will be considered in the next higher class whether they have actually competed in that class or not (Section 7206, Page 62).\n\n**Transferring Regions**\n\n- If a rider transfers from one region to another, points earned shall be transferred to the new region (Section 7208, Page 62).",
+    "score": "PARTIAL (Found {'7207'}, Missing {'7201', '7203'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7207",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 77,
+        "section": "9102",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 69,
+        "section": "7703",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 64,
+        "section": "7501",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 65,
+        "section": "7601",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1304",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 61,
+        "section": "7102",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 63,
+        "section": "7302",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7205",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7206",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7208",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 80,
+        "section": "9102",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How many alternates are required?",
+    "expected": "There must be at  least one designated alternate. Rule 4501.\n\n\nAmy Sherrick - USEF Rulebook - HU- Hunter Division 2025\n\nGood Response",
+    "actual": " DIRECT:\n- No specific rules regarding alternates are found in the provided documents.\n\nCOVERAGE:\n\n#### Individual Eligibility and Academic Eligibility\n- Section 1300, Page 5: The IHSA Individual Eligibility Packet is required.\n- Section 1301, Page 5: The IHSA Academic Eligibility Form is required for each student to compete in IHSA shows at the beginning of each term.\n- Section 1107, Page 2 and 3: Each college membership online application must contain signatures of the Designated Representative and Team Coach who act for and on behalf of the Equestrian team or club recognized by the college in all matters arising out of its membership in the IHSA.\n\n#### Rider Classification\n- Section 5304, Page 44: The show stewards have the power to reclassify riders who are competing at incorrect levels. All points and ribbons won in such classes shall be forfeited.\n- Section 1409, Page 9: Riders having temporary physical disabilities will be evaluated on an individual basis by the stewards, the show committee, the stable providing facilities and the persons providing horses for the show, as to suitability and safety.\n\n#### Show Procedures\n- Section 5303, Page 44: After a show, the Regional President AND the Zone Chair must receive an online Show Steward Report within five (5) days of the show. If there were any show problems or any riders were reclassified, the show report must be forwarded onto the National Steward within two (2) days of receipt of the report.\n- Section 5303, Page 44: All accident/claim forms must be collected and a copy online to both the Regional President, Nationals Steward, Zone Chair and the Insurance Chair within five (5) days of the show date.\n- Section 7404, Page 64: No minimum number of riders is needed to fill a class at Regional shows.",
+    "score": "FAIL (Found {'5303', '5304', '1409', '1300', '1107', '7404', '1301'}, Expected {'2025', '4501'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1302",
+        "score": 0.87
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 77,
+        "section": "9102",
+        "score": 0.86
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1301",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1307",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 80,
+        "section": "9102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 2,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 3,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 44,
+        "section": "5303",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 44,
+        "section": "5304",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 9,
+        "section": "1409",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 64,
+        "section": "7404",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How high do Young Hunters jump?",
+    "expected": "Young Hunters jump at the following heights:\nYoung Hunter 5 and under: 2'9\"\nYoung Hunter 6 and under: 3'0\"\nYoung Hunter 7 and under: 3'3\"\nThis information can be found in subchapter HU111.",
+    "actual": " The provided excerpt does not explicitly state the height of jumps for Young Hunters. However, it does provide information about the jumping abilities of riders in recognized competitions:\n\n1. Riders who have placed in the Top Ten in the Maclay Finals or USEF Talent Search Finals can jump over fences three feet, six inches (3\u20196\u201d) or higher. (Section 8102, Page 73)\n\nSince Young Hunters are part of the recognized competitions, they may potentially jump at this height or higher based on their placement in the Maclay Finals or USEF Talent Search Finals. However, it's essential to note that this is an interpretation and not a direct statement from the provided excerpt.\n\nI cannot find specific rules regarding the jumping height for Young Hunters in general without considering their placement in other competitions.",
+    "score": "FAIL (Found {'8102'}, Expected {'111'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8102",
+        "score": 0.83
+      }
+    ]
+  },
+  {
+    "question": "How high are walk fences?",
+    "expected": "Walk fences may not exceed 2\u2019 in height and spread. HU 109, 1a.\n\nIn the schooling area, walk rails may be no higher than 12\u201d at the highest point. A walk rail may be parallel to the ground with both ends in cups, or may have one end resting on the ground. Cross rails are NOT allowed. Ground rails are NOT permitted. Horses will approach and depart in a straight line only and may NOT be turned. Appendix A - USEF Hunter Schooling Rules, 15.",
+    "actual": " DIRECT:\n\n* Walk fences in Hunter Seat classes for IHSA are not explicitly specified in the provided documents. However, new riders start with 0 points each year and are required to jump over fences not exceeding 3' 3\" in height (Section 8102, Page 75). If no actual height is listed on the report, the maximum allowable height will be recognized for placement purposes (Section 8101, Page 72).\n\n[Note: Additional relevant sections were found in evidence but might have been summarized above.]",
+    "score": "FAIL (Found {'8102', '8101'}, Expected {'109'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 75,
+        "section": "8102",
+        "score": 0.92
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 72,
+        "section": "8101",
+        "score": 0.86
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8100",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8101",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 72,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8103",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4301",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4302",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4307",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6200",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6201",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How high do large pony hunters jump?",
+    "expected": "Large pony hunters jump 2\u20199\u201d in the Green Pony Hunter Division. Large pony hunters jump 2\u20199\u201d-3\u2019 in the Regular Pony Hunter Division. HU111.13, HU111.14",
+    "actual": " DIRECT:\n\nThe provided evidence does not specify the height that large pony hunters jump in IHSA competitions. However, it mentions a maximum allowable height for placement purposes if no actual height is listed on the report (Section 8101, Page 72). In addition, Intermediate Equitation over Fences riders must show over six or more fences not to exceed 2' 9\u201d in height (Section 8102, Page 74). This could potentially be for large pony hunters, but it is not explicitly stated.\n\nCOVERAGE:\n\n- In IHSA, recognized competitions include those sanctioned by USEF, USHJA, USEA, or USDF (Section 8101, Page 71).\n- Any number of mounted lessons taken within a week constitutes a week of instruction (Section 8101, Page 71).\n- Hunter seat equitation classes are judged on hunter seat equitation specifically and must have a minimum of three competitors to count as a win (Section 8101, Page 71).\n- Equitation classes on the flat must require the rider to canter in order to count as a win (Section 8101, Page 71).\n- Riders who are entering IHSA with only International experience will need to follow the corresponding fence heights and ribbons won from competitions that are recognized/sanctioned by that country\u2019s governing body (Section 8101, Page 71).\n- An Academic Year is any two consecutive semesters (Section 8101, Page 71).\n- The performance begins when the horse enters the ring or is given the signal to proceed after entering the ring. Except for refusals, jumping faults of the horse are not to be considered unless it is the fault of the rider (Section 6206, Page 48).\n- Number of strides shall not be considered unless it is the fault of the rider (Section 6206, Page 48).\n- Each contestant may circle once, if desired, before approaching the first jump. They shall then proceed around the course, keeping an even pace throughout (Section 6206, Page 48).\n- Three cumulative refusals will eliminate (Section 6206, Page 48).\n- If a refusal occurs in a double or triple, riders shall re-jump all elements of the combination. No courtesy fence will be allowed after elimination (Section 6206, Page 48).\n- If no actual height is listed on the report, the maximum allowable height will be recognized for placement purposes (Section 8101, Page 72).\n- Riders may continue to compete in their divisions until their eligibility is up, even if they have qualified out of the corresponding Hunter Seat or Western division (Section 8103, Page 73).\n- Open riders on the flat and over fences are those who have competed in an NCEA Recognized competition (Section 8102, Page 72).\n- Limit Hunter Seat Equitation over Fences riders may not show below Limit Hunter Seat Equitation on the Flat (Section 8102, Page 73).\n- Riders who canter/lope in one IHSA discipline may not start in the Introductory or Beginner division in the other discipline (Section 8102, Page 73).\n- Riders are eligible for IHSA Class 2A or 12A or above if they have earned 36 points in Class 1 or are new riders (Section 8102, Page 74).\n- Riders are eligible until 18 points are accumulated in Class 2A. To be judged at the walk, trot, and canter both ways of the ring. Tests 1-5, 9 may be asked (Section 8102, Page 74).\n- Riders who have earned 36 points in Class 2 must advance to Class 3 (Section 8102, Page 74).\n- To be judged at the walk, trot, and canter both ways of the ring. Tests 1-9 may be asked (Section 8102, Page 74).\n- Eligibility for Class 3 does not necessarily qualify a rider for Class 4 (Section 8102, Page 74).\n- Upon acquiring 36 points in Class 3,",
+    "score": "FAIL (Found {'8102', '8101', '8103', '6206'}, Expected {'111'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8101",
+        "score": 0.93
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 48,
+        "section": "6206",
+        "score": 0.89
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 72,
+        "section": "8101",
+        "score": 0.88
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8102",
+        "score": 0.86
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 73,
+        "section": "8103",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 74,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 74,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 74,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 75,
+        "section": "8102",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6200",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6201",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 47,
+        "section": "6202",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How tall is a small pony?",
+    "expected": "Small ponies are not to exceed 12.2 hands. HU 141, 3a.\n\nBad Response 2",
+    "actual": " DIRECT: The small ponies are not allowed in IHSA shows according to Section 4310, Page 33.",
+    "score": "FAIL (Found {'4310'}, Expected {'141'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "8101",
+        "score": 0.86
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 33,
+        "section": "4310",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 72,
+        "section": "8101",
+        "score": 0.83
+      }
+    ]
+  },
+  {
+    "question": "Are standing martingales allowed in the hunter divisions?",
+    "expected": "Martingales of any type are prohibited in under saddle, hack and tie-breaking classes. Standing and running martingales used in the conventional manner are allowed for all over fences classes. All other martingales are considered illegal. A judge must eliminate a horse or pony that competes in a martingale other than a standing or running martingale used in the conventional manner.  HU105, 4.\n\n\nAmy Sherrick - IHSA Rulebook - retested 8/8/25\n\nGood Response",
+    "actual": " I cannot find specific rules regarding standing martingales in the hunter divisions within the provided documents. However, here are some related rules that might be useful:\n\n- Class Routine (Section 4300, Page 31) and All classes for which rules are provided herein must be conducted accordingly (Section 4301, Page 31). These sections imply that the rules governing a class should be followed, but there is no explicit mention of standing martingales.\n\n- Care and control of horses including any drugs or medications administered shall be the sole prerogative of the horse provider or their designated representative (Section 4302, Page 31). This suggests that equipment like a martingale could potentially fall under this category, but again, there is no specific mention of standing martingales.\n\n- Special classes may be offered by the show committee if time and horse availability permit; but they must be scheduled after the regular over fences classes are completed (Section 4307, Page 32). This might indicate that any equipment rules for special classes could differ from those in the hunter divisions.\n\n- Affiliated Associations consist of organizations and other groups in good standing...which have federated together to form an association (Section 1701, Page 11). This suggests that different affiliated associations might have their own rules regarding equipment like martingales.\n\n[Note: Additional relevant sections were found in evidence but might have been summarized above.]",
+    "score": "FAIL (Found {'4301', '4302', '1701', '4300', '4307'}, Expected {'105'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4200",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4201",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4203",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4204",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4301",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4302",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4307",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 32,
+        "section": "4308",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1700",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1701",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1702",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "When must online prizelists be posted?",
+    "expected": "Online prize lists must be received via email not less than two (2) weeks prior to the closing date of entries and must be sent to all colleges in the region.\n(Section 5401, B.)",
+    "actual": " DIRECT: Online prizelists must not be specifically mentioned in the provided documents. I cannot find specific rules regarding when online prizelists should be posted in the current documents.\n\n[Note: Additional relevant sections were found in evidence but might have been summarized above.]",
+    "score": "FAIL (Found set(), Expected {'5401'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1302",
+        "score": 0.89
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1300",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 5,
+        "section": "1301",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 7,
+        "section": "1307",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 2,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 3,
+        "section": "1107",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 9,
+        "section": "1409",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1700",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1701",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 11,
+        "section": "1702",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 59,
+        "section": "6510",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 59,
+        "section": "6511",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How does an individual rider qualify for regionals?",
+    "expected": "Riders who begin showing in a beginner section (2A and 12A) of Classes 2 & 12 \nmust move to the advanced section (2B and 12B) when they have acquired 18, or \nmore, points.  All previous points are carried over within the Class from the \nbeginner to advanced sections, and when riders accumulate a total of 36 points, \nthey must move up to the next Class.  Riders are also qualified for Regionals once \nthey have earned the 36 points between the beginner and advanced sections. \n(Section 7201, page 62)\n\nRiders in classes 3 - 6 & 11-15must move into the next higher class when they \nhave earned 36 points.  They are also qualified for Regionals.\n(Section 7203, page 62)\n\nRiders must move out of classes 1 & 11 when their years of eligibility expire, \nregardless of points earned.  They must move into the next higher class when they \nhave earned 36 points and they are also qualified for Regionals.\n(Section 7204, page 62)\n\nRiders in Classes 7, 8, 16 & 17 will start each year with zero points and must \nacquire 28 to qualify for Regionals.  In the event of a disparity in the number of \nshows  held within a region and no rider qualifies in these classes, the number of \npoints may be lowered to qualify the next highest rider(s) with a minimum of 21 \nand with the permission of the National Steward. \n(Section 7207, page 62)\n\n\nBad Response 1",
+    "actual": " An individual rider qualifies for regionals by meeting the following criteria:\n\n- Qualifying out of a class means acquiring a certain number of points, depending on the class. For classes 7, 8, 16 & 17, a rider will start each year with zero points and must acquire 28 to qualify for Regionals (Section 7207, Page 62).\n- Riders who place first and second at Regionals are eligible to compete at Zones/Western Semi-Finals. They are required to compete at the Zones/Western Semi-Finals in order to qualify for the National Championships (Section 7601, Page 65).\n- Riders must have shown in a regular IHSA point show during the current season and must ride at their current level. This rule applies to both team and individual classes (See Rule 7206, Section 7602).\n- Undergraduate riders must be full time students in good standing in the academic period just prior to the show in accordance with Rule 1201 (Section 7701, Page 67).\n- If a rider transfers from one region to another, points earned shall be transferred to the new region (See Rule 7501-A, Section 7208).\n- In all classes, riders who place first and second at Zones or first through fourth at a Western Semi-Finals shall be eligible to compete at Nationals (Section 7701, Page 67).",
+    "score": "PARTIAL (Found {'7207'}, Missing {'7201', '7203', '7204'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7206",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 69,
+        "section": "7703",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 4,
+        "section": "2022",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 77,
+        "section": "9102",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7207",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 66,
+        "section": "7602",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 64,
+        "section": "7405",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 65,
+        "section": "7601",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7205",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7208",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 67,
+        "section": "7701",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 71,
+        "section": "7704",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "question": "How many points are required to qualify for hunt seat regionals?",
+    "expected": "Riders who begin showing in a beginner section (2A and 12A) of Classes 2 & 12 \nmust move to the advanced section (2B and 12B) when they have acquired 18, or \nmore, points.  All previous points are carried over within the Class from the \nbeginner to advanced sections, and when riders accumulate a total of 36 points, \nthey must move up to the next Class.  Riders are also qualified for Regionals once \nthey have earned the 36 points between the beginner and advanced sections. \n(Section 7201, page 62)\n\nRiders in classes 3 - 6 & 11-15must move into the next higher class when they \nhave earned 36 points.  They are also qualified for Regionals.\n(Section 7203, page 62)\n\nRiders must move out of classes 1 & 11 when their years of eligibility expire, \nregardless of points earned.  They must move into the next higher class when they \nhave earned 36 points and they are also qualified for Regionals.\n(Section 7204, page 62)\n\nRiders in Classes 7, 8, 16 & 17 will start each year with zero points and must \nacquire 28 to qualify for Regionals.  In the event of a disparity in the number of \nshows  held within a region and no rider qualifies in these classes, the number of \npoints may be lowered to qualify the next highest rider(s) with a minimum of 21 \nand with the permission of the National Steward. \n(Section 7207, page 62)",
+    "actual": " DIRECT: To qualify for hunt seat regionals, a rider needs to acquire 28 points in Classes 7, 8, 16, or 17 as stated in Section 7207 (Page 62) and Section 7401 (Page 64). If no rider qualifies due to differences in the number of shows held within a region, the minimum points required may be lowered with permission from the National Steward. The exact wording is:\n- Riders in Classes 7, 8, 16 & 17 will start each year with zero points and must acquire 28 to qualify for Regionals. (Section 7207, Page 62)\n- Riders are eligible to compete in the Regional Show upon acquiring 28/36 points in a class. See Rule 7207. (Section 7401, Page 64)\n\n[Note: Additional relevant sections were found in evidence but might have been summarized above.]",
+    "score": "PARTIAL (Found {'7207'}, Missing {'7201', '7203', '7204'})",
+    "sources": [
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7207",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 64,
+        "section": "7401",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 65,
+        "section": "7502",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 66,
+        "section": "7602",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7201",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 64,
+        "section": "7501",
+        "score": 0.99
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4201",
+        "score": 0.94
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7205",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7206",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 62,
+        "section": "7208",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4200",
+        "score": 0.85
+      },
+      {
+        "filename": "IHSA Rulebook.pdf",
+        "page": 31,
+        "section": "4204",
+        "score": 0.85
+      }
+    ]
+  }
+]

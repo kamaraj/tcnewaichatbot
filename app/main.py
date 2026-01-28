@@ -37,6 +37,7 @@ if os.path.exists(static_dir):
 app.include_router(router, prefix="/api")
 
 
+
 @app.get("/")
 async def root():
     """Serve the main chat interface."""
@@ -44,6 +45,15 @@ async def root():
     if os.path.exists(index_path):
         return FileResponse(index_path)
     return {"message": "TCA AI Chatbot API", "docs": "/docs"}
+
+
+@app.get("/userchatassistant")
+async def user_chat_assistant():
+    """Serve the user chat assistant interface."""
+    page_path = os.path.join(static_dir, "userchatassistant.html")
+    if os.path.exists(page_path):
+        return FileResponse(page_path)
+    return {"message": "User Chat Assistant Page not found"}
 
 
 @app.on_event("startup")

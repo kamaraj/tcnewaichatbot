@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     
     # LLM Provider
-    llm_provider: Literal["ollama", "claude", "qwen"] = "ollama"
+    llm_provider: Literal["ollama", "claude", "qwen", "openrouter", "openai", "gemini", "groq"] = "ollama"
     
     # Ollama Configuration
     ollama_base_url: str = "http://localhost:11434"
@@ -25,6 +25,23 @@ class Settings(BaseSettings):
     # Qwen Configuration
     qwen_api_key: str = ""
     qwen_model: str = "qwen-turbo"
+
+    # OpenRouter Configuration
+    openrouter_api_key: str = ""
+    openrouter_model: str = "openai/chatgpt-4o-latest"
+
+    # OpenAI Configuration
+    openai_api_key: str = ""
+    openai_model: str = "gpt-4o"
+
+    # Gemini Configuration
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-1.5-flash"
+
+    # Groq Configuration
+    groq_api_key: str = ""
+    groq_model: str = "llama-3.3-70b-versatile"
+
     
     # Embedding Model (Ollama-based - no PyTorch/ONNX needed)
     embedding_model: str = "nomic-embed-text"
@@ -38,11 +55,11 @@ class Settings(BaseSettings):
     max_file_size_mb: int = 50
     
     # Chunking Configuration
-    chunk_size: int = 500
-    chunk_overlap: int = 50
+    chunk_size: int = 1000
+    chunk_overlap: int = 200
     
     # Retrieval Configuration
-    top_k_results: int = 5
+    top_k_results: int = 7
     
     # Server Configuration
     host: str = "0.0.0.0"

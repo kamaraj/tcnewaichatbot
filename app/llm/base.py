@@ -14,7 +14,7 @@ class BaseLLMProvider(ABC):
     async def generate(
         self,
         prompt: str,
-        context: str,
+        context: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 1024
     ) -> str:
@@ -22,8 +22,8 @@ class BaseLLMProvider(ABC):
         Generate a response from the LLM.
         
         Args:
-            prompt: User's question
-            context: Retrieved context from documents
+            prompt: User's question or full prompt
+            context: Optional retrieved context from documents
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
             
@@ -36,7 +36,7 @@ class BaseLLMProvider(ABC):
     async def generate_stream(
         self,
         prompt: str,
-        context: str,
+        context: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 1024
     ) -> AsyncGenerator[str, None]:
@@ -44,8 +44,8 @@ class BaseLLMProvider(ABC):
         Stream a response from the LLM.
         
         Args:
-            prompt: User's question
-            context: Retrieved context from documents
+            prompt: User's question or full prompt
+            context: Optional retrieved context from documents
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
             
@@ -59,23 +59,25 @@ class BaseLLMProvider(ABC):
         """Check if the LLM provider is available."""
         pass
     
-    def build_rag_prompt(self, question: str, context: str) -> str:
+    def build_rag_prompt(self, question: str, context: Optional[str] = None) -> str:
         """
-        Build a RAG prompt with context and question.
-        Uses Evidence-First approach for better results with smaller models.
+        Build a concise RAG prompt focused on rulebook assistant persona.
+        If context is missing, return the question as is (assume it's a full prompt).
         """
-        return f"""You are a helpful assistant that answers questions based ONLY on the provided context.
+        if not context:
+            return question
+            
+        return f"""### Instruction:
+You are a helpful and strict IHSA Rulebook assistant. 
+- Use ONLY the following information to answer the question.
+- Do NOT mention "context", "documents", or "AI". 
+- If the answer is not in the text, say you cannot find it.
+- Maintain citations (Section ####, page ##) if they exist.
 
-CONTEXT FROM DOCUMENTS:
+### Information:
 {context}
 
-INSTRUCTIONS:
-1. Answer the question using ONLY the information from the context above
-2. If the answer is not found in the context, say "I couldn't find this information in the uploaded documents."
-3. Always cite which part of the document your answer comes from
-4. Be concise and accurate
-5. Do NOT make up information that is not in the context
+### User Question:
+{question}
 
-QUESTION: {question}
-
-ANSWER:"""
+### Assistant Response:"""

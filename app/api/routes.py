@@ -97,7 +97,7 @@ async def upload_document(file: UploadFile = File(...)):
         processed_doc = pdf_processor.process_pdf(file_path, file.filename)
         
         # Index in vector store
-        result = vector_store.add_document(processed_doc)
+        result = await vector_store.add_document_async(processed_doc)
         
         return UploadResponse(
             status="success",

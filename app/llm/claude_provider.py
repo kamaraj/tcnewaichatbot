@@ -5,7 +5,7 @@ For future use when switching from local Ollama to Claude.
 
 import httpx
 import json
-from typing import AsyncGenerator
+from typing import AsyncGenerator, Optional
 from .base import BaseLLMProvider
 from ..config import settings
 
@@ -32,7 +32,7 @@ class ClaudeProvider(BaseLLMProvider):
     async def generate(
         self,
         prompt: str,
-        context: str,
+        context: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 1024
     ) -> str:
@@ -68,7 +68,7 @@ class ClaudeProvider(BaseLLMProvider):
     async def generate_stream(
         self,
         prompt: str,
-        context: str,
+        context: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 1024
     ) -> AsyncGenerator[str, None]:

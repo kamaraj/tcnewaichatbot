@@ -6,6 +6,10 @@ Enables easy switching between providers via configuration.
 from .base import BaseLLMProvider
 from .ollama_provider import OllamaProvider
 from .claude_provider import ClaudeProvider
+from .openrouter_provider import OpenRouterProvider
+from .openai_provider import OpenAIProvider
+from .gemini_provider import GeminiProvider
+from .groq_provider import GroqProvider
 from ..config import settings
 
 
@@ -14,7 +18,7 @@ def get_llm_provider(provider: str = None) -> BaseLLMProvider:
     Factory function to get the configured LLM provider.
     
     Args:
-        provider: Override the configured provider (ollama, claude, qwen)
+        provider: Override the configured provider (ollama, claude, qwen, openrouter, openai, gemini, groq)
         
     Returns:
         Configured LLM provider instance
@@ -25,6 +29,14 @@ def get_llm_provider(provider: str = None) -> BaseLLMProvider:
         return OllamaProvider()
     elif provider_name == "claude":
         return ClaudeProvider()
+    elif provider_name == "openrouter":
+        return OpenRouterProvider()
+    elif provider_name == "openai":
+        return OpenAIProvider()
+    elif provider_name == "gemini":
+        return GeminiProvider()
+    elif provider_name == "groq":
+        return GroqProvider()
     elif provider_name == "qwen":
         # Qwen can use Ollama if running locally, or API
         # For now, default to Ollama with qwen model
