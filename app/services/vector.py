@@ -1,7 +1,7 @@
-# from langchain_chroma import Chroma
+from langchain_chroma import Chroma
 from app.config import settings
 from app.services.utils import get_embeddings
-# import chromadb
+import chromadb
 
 # Initialize the persistent client globally or per request if needed
 # LangChain's Chroma wrapper handles persistence well.
