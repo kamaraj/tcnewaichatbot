@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - .:/app
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - REDIS_URL=redis://redis:6379/0
+      - SQLITE_URL=sqlite:///./data/sql_app.db
+    depends_on:
+      - redis
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  # Optional: Run Chroma as a server (client code would need adjustment to use HttpClient)
+  # chroma:
+  #   image: chromadb/chroma
+  #   ports:
+  #     - "8000:8000"
+  
+  # Optional: Ollama (CPU only usually, unless configured with Nvidia runtime)
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+
+volumes:
+  ollama_data:

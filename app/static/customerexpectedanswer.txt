@@ -1,0 +1,268 @@
+Turnout AI Answer Examples
+
+
+Amy Wertenberger American Shetland Pony Club Rulebook. 
+Good Response
+Question: 
+How long do you have to catch in liberty?
+Expected Answer: 
+The catch time for liberty is 2 minutes. Section ####
+Answer: 
+In the Liberty class, you have 2 minutes to catch and halter the pony/horse after the performance time has ended. If the catch is not completed within this time frame, the exhibitor is disqualified. This information can be found in the following sections of the rulebook:
+**Section XII – In Hand/Single Working Performance**
+- D. "The pony/horse must be caught and haltered by the exhibitor only within 2 minutes or be disqualified."
+**General Liberty Rules**
+- B. "Time of liberty shall be 1½ minutes; time to catch shall be 2 minutes."
+**Stewards Section**
+- J. "When the 2-minute catch time has elapsed, the show announcer will announce TIME to signal the end of the catch if the animal has not been caught."
+
+Partial Response 1
+Question: 
+How can you be disqualified from in hand obstacle
+Expected Answer: 
+The following will result in the exhibitor being excused from the course and disqualified from the class:
+	•	Carrying a whip or crop . 
+	•	Handler physically moving or coercing the pony/ horse by touching . 
+	•	Refusals of three (3) obstacles . 
+	•	Attendants interfering with the performance of the individual or equine . 
+	•	Off course or horse leaving the obstacle course . 
+Off course is defined as: • Taking an obstacle in the wrong direction . • Negotiating an obstacle from the wrong side . In Hand Single/Working • Skipping an obstacle unless directed by the judge . • Negotiating obstacles in the wrong sequence . • Off pattern 
+Answer: 
+You can be disqualified from the in-hand obstacle class under the following circumstances according to Section XII – In Hand/Single Working Performance D of the rulebook:
+1. Carrying a whip or crop while competing.
+2. The handler physically moving or coercing the pony/horse by touching them.
+3. Refusals of three (3) obstacles.
+4. Interference from attendants.
+Additionally, it's essential to adhere to all equipment and course design regulations to maintain safety and compliance with the class standards.
+Partial Response 2
+Question: 
+How tall are the fences in hunter class?
+Answer: 
+The fence heights for the Hunter class are as follows:
+Modern & ASPC: Minimum height is 16 inches and maximum height is 26 inches.
+AMHR – Over/Under: Minimum height is 12 inches and maximum height is 24 inches. If the height exceeds 24 inches, a second rail is required.
+This information can be found in the sections regarding Hunter Courses and Fence Heights within the rulebook. 
+Expected Answer: 
+Fence heights for Hunters are: • 
+Modern & ASPC • Minimum height 16" Maximum height 26" • AMHR – Over/Under • Minimum height 12" Maximum height 24"
+If over 24" a second rail is required 
+At the discretion of show management, maximum heights may be adjusted . 
+
+Section XII. 1.5, c-12
+Bad Response 1
+Answer: 
+Based on the COOL Showmanship section of the rulebook, gloves are suggested but not required. Here are the relevant sections:
+**5.8 COOL Showmanship**
+- A. "Boots, gloves, and hats are suggested but not required."
+Therefore, while it is recommended to wear gloves, you are not obligated to do so.
+Question: 
+Do I need gloves in Showmaship?
+Expected Answer: 
+In section #### It indicates that gloves are optional in showmanship. 
+
+Bad Response 2
+Question: 
+How old does a mini need to be to jump?
+Answer: 
+Based on the rulebook provided, for the Youth Jumper Over Fences Division, the pony (miniature horse) must be two years old or older in order to participate in jumping events. This applies to both the Youth Hunter and Youth Jumper divisions as mentioned in section 3.2.
+Relevant sections of the rulebook:
+Section 3.2 Hunter and Jumper Division A, B: "Pony must be two years old or older."
+Expected Answer: 
+Section XII. 1.5 Hunter & Jumper in Hand (ASPC/AMHR) 
+A . General 1 . 
+Age 
+a) ASPC & NSPPR ponies must be two years old or older .
+b) AMHR horses must be three years old or older 
+
+
+
+
+
+Amy Sherrick - IHSA Rulebook
+
+Good Response
+
+Question: Is there a minimum age requirement for coaches?
+
+Expected Answer:  Yes.  According to Rule 1102.A, all IHSA coaches must be at least 21 years old.
+
+Answer: Yes, there is a minimum age requirement for coaches. According to Rule 1102.A, all IHSA coaches must be at least 21 years old.
+
+
+Partial Response 1
+
+Question:  Are medications allowed for the horses?
+
+Expected Answer: Care and control of horses including any drugs or medications administered shall be the sole prerogative of the horse provider or their designated representative. Administration of drugs and medications shall be limited to therapeutic use only and used for the well-being of the horse. The administration of central nervous system drugs is prohibited in IHSA competition. See Rule 3401.J At the June meeting, the National Steward will randomly select one IHSA competition in each Zone to be tested for CNS drugs. This would require no more than one horse/random selection to be tested. The IHSA will hire the veterinarian, chosen by the show manager, and would receive the results and hand down the appropriate penalties for violations. Rule 4302.
+
+Answer: 4302 A
+Partial Response 2
+Question:  Does the Regional President have to be a member of the USHJA?
+Expected Answer: The Regional President must have a membership in the USHJA and/or the American Quarter Horse Association. Rule 2302. A
+Answer: 2302 A
+
+Bad Response 1
+Answer: The rulebook does not specify a specific number of points that Hunt Seat riders need to qualify for regionals. However, it does mention that to determine the Regional High Point Rider, cumulative totals of points from each show will be kept. The relevant section is:  Section 7501-A
+Question:  How many points do hunt seat riders need to qualify for regionals?
+Expected Answer: Riders are also qualified for Regionals once they have earned the 36 points between the beginner and advanced sections of Classes 2A & 2B. 
+Riders in classes 3 - 6 & 11-15 are qualified for Regionals when they have earned 36 points.  Riders in Classes 7 and 8 will start each year with zero points and must acquire 28 to qualify for Regionals.  Rules 7201, 7203 and 7207.
+
+
+Bad Response 2
+
+Answer: Section 4204 does not specify a number of alternates required, as it discusses the situation when there are fewer than three entries. Therefore, no specific answer regarding the number of alternates can be provided from the given text. Section 4204
+
+Question: How many alternates are required?
+Expected Answer: There must be at  least one designated alternate. Rule 4501.
+
+
+Amy Sherrick - USEF Rulebook - HU- Hunter Division 2025
+
+Good Response
+
+Question: How high do Young Hunters jump?
+
+Expected Answer:  Young Hunters jump at the following heights:
+Young Hunter 5 and under: 2'9"
+Young Hunter 6 and under: 3'0"
+Young Hunter 7 and under: 3'3"
+This information can be found in subchapter HU111.
+
+
+Answer: Young Hunters jump at the following heights:
+Young Hunter 5 and under: 2'9"
+Young Hunter 6 and under: 3'0"
+Young Hunter 7 and under: 3'3"
+This information can be found in subchapter HU111.
+
+
+Partial Response 1
+
+Question: How high are walk fences?
+
+Expected Answer:  Walk fences may not exceed 2’ in height and spread. HU 109, 1a.
+
+In the schooling area, walk rails may be no higher than 12” at the highest point. A walk rail may be parallel to the ground with both ends in cups, or may have one end resting on the ground. Cross rails are NOT allowed. Ground rails are NOT permitted. Horses will approach and depart in a straight line only and may NOT be turned. Appendix A - USEF Hunter Schooling Rules, 15.
+
+Answer: Walk rails may be no higher than 12” at the highest point. A walk rail may be parallel to the ground with both ends in cups, or may have one end resting on the ground. Cross rails are NOT allowed. Ground rails are NOT permitted. Horses will approach and depart in a straight line only and may NOT be turned.
+This information can be found in the subchapter: HU111 Height of Obstacles, specifically in the section regarding walk rails.
+
+
+
+Partial Response 2
+
+Question:  How high do large pony hunters jump?
+
+Expected Answer: Large pony hunters jump 2’9” in the Green Pony Hunter Division. Large pony hunters jump 2’9”-3’ in the Regular Pony Hunter Division. HU111.13, HU111.14
+
+Answer: Large pony hunters jump a maximum height of 2'9" (or 0.85 meters). This information can be found in the subchapter HU142 Pony Hunter and Green Pony Hunter, specifically under the section regarding determining hunter eligibility for ponies.
+
+Bad Response 1
+Answer: The context does not specify the exact height of a small pony. However, it mentions that in Hunter classes for small ponies, the jump heights are set at 2'3" (0.70 meters). If you have any other specific details or questions, feel free to share!
+Question:  How tall is a small pony?
+Expected Answer: Small ponies are not to exceed 12.2 hands. HU 141, 3a.
+
+Bad Response 2
+Answer: The allowance of standing martingales in the hunter divisions is not directly addressed in the provided text. It would be typically mentioned in a section regarding equipment or tack regulations, but such details are not included in the excerpts provided. For concrete information, please refer to the specific regulations for tack and equipment, or check the full rulebook.
+Question: Are standing martingales allowed in the hunter divisions?
+Expected Answer: Martingales of any type are prohibited in under saddle, hack and tie-breaking classes. Standing and running martingales used in the conventional manner are allowed for all over fences classes. All other martingales are considered illegal. A judge must eliminate a horse or pony that competes in a martingale other than a standing or running martingale used in the conventional manner.  HU105, 4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Amy Sherrick - IHSA Rulebook - retested 8/8/25
+
+Good Response
+
+Question: When must online prizelists be posted?
+
+Expected Answer:  Online prize lists must be received via email not less than two (2) weeks prior to the closing date of entries and must be sent to all colleges in the region.
+(Section 5401, B.)
+
+Answer: Online prize lists must be received via email not less than two (2) weeks prior to the closing date of entries and must be sent to all colleges in the region. This information can be found in Section 5401 B.
+Can I help you with anything else?
+
+
+Partial Response 1
+Answer: An individual rider qualifies for the Regional Show by acquiring 28 out of 36 points in a class, as stated in section 7401 on page .64 of the rulebook. Additionally, undergraduate riders must be full-time students in good standing in the academic period just prior to the show, according to rule 7402.  Can I help you with anything else?
+Question: How does an individual rider qualify for regionals? 
+Expected Answer: 
+Riders who begin showing in a beginner section (2A and 12A) of Classes 2 & 12 
+must move to the advanced section (2B and 12B) when they have acquired 18, or 
+more, points.  All previous points are carried over within the Class from the 
+beginner to advanced sections, and when riders accumulate a total of 36 points, 
+they must move up to the next Class.  Riders are also qualified for Regionals once 
+they have earned the 36 points between the beginner and advanced sections. 
+(Section 7201, page 62)
+
+Riders in classes 3 - 6 & 11-15must move into the next higher class when they 
+have earned 36 points.  They are also qualified for Regionals.
+(Section 7203, page 62)
+
+Riders must move out of classes 1 & 11 when their years of eligibility expire, 
+regardless of points earned.  They must move into the next higher class when they 
+have earned 36 points and they are also qualified for Regionals.
+(Section 7204, page 62)
+
+Riders in Classes 7, 8, 16 & 17 will start each year with zero points and must 
+acquire 28 to qualify for Regionals.  In the event of a disparity in the number of 
+shows  held within a region and no rider qualifies in these classes, the number of 
+points may be lowered to qualify the next highest rider(s) with a minimum of 21 
+and with the permission of the National Steward. 
+(Section 7207, page 62)
+
+
+Bad Response 1
+
+Answer: To qualify for Hunt Seat Regionals, a college must maintain at least 75 competing Hunt Seat riders, counted by the last regular season horse show. If this number is not achieved, the region will be placed on probation for the following competition year, and if they still do not meet the required number during the probationary year, they will not be eligible to send individual riders or teams to Zones or Nationals (Section 1, page 220).  Can I help you with anything else?
+
+Question:  How many points are required to qualify for hunt seat regionals? 
+
+Expected Answer: 
+Riders who begin showing in a beginner section (2A and 12A) of Classes 2 & 12 
+must move to the advanced section (2B and 12B) when they have acquired 18, or 
+more, points.  All previous points are carried over within the Class from the 
+beginner to advanced sections, and when riders accumulate a total of 36 points, 
+they must move up to the next Class.  Riders are also qualified for Regionals once 
+they have earned the 36 points between the beginner and advanced sections. 
+(Section 7201, page 62)
+
+Riders in classes 3 - 6 & 11-15must move into the next higher class when they 
+have earned 36 points.  They are also qualified for Regionals.
+(Section 7203, page 62)
+
+Riders must move out of classes 1 & 11 when their years of eligibility expire, 
+regardless of points earned.  They must move into the next higher class when they 
+have earned 36 points and they are also qualified for Regionals.
+(Section 7204, page 62)
+
+Riders in Classes 7, 8, 16 & 17 will start each year with zero points and must 
+acquire 28 to qualify for Regionals.  In the event of a disparity in the number of 
+shows  held within a region and no rider qualifies in these classes, the number of 
+points may be lowered to qualify the next highest rider(s) with a minimum of 21 
+and with the permission of the National Steward. 
+(Section 7207, page 62)
+
+

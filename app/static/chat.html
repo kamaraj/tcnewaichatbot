@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .chat-wrapper {
+            width: 100%;
+            max-width: 800px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            /* Occupy most of the screen height */
+        }
+
+        .header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Chat Section */
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+            /* Important for scroll */
+        }
+
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            /* Preserve whitespace for better rule formatting */
+        }
+
+        .message.user {
+            align-self: flex-end;
+            background: linear-gradient(135deg, var(--primary), #8b5cf6);
+            color: white;
+        }
+
+        .message.bot {
+            align-self: flex-start;
+            background: var(--bg-card-hover);
+        }
+
+        .message-meta {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 8px;
+            /* opacity: 0.7; */
+        }
+
+        .chat-input-container {
+            padding: 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: var(--bg-card);
+            /* Ensure it sits on top */
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        .chat-input-row {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .btn {
+            padding: 10px 24px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #8b5cf6);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Loading spinner */
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Sample Questions */
+        .sample-questions {
+            padding: 16px 24px;
+            display: flex;
+            flex-wrap: wrap;
+            /* Wrap to new lines */
+            gap: 8px;
+            border-bottom: 1px solid var(--border);
+            max-height: 180px;
+            /* Limit height */
+            overflow-y: auto;
+            /* Scroll vertically */
+            background: rgba(15, 23, 42, 0.5);
+            /* Slight distinction */
+        }
+
+        .sample-questions::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sample-questions::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sample-questions::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+
+        .sample-questions::-webkit-scrollbar-thumb:hover {
+            background: var(--text-secondary);
+        }
+
+        .sample-chip {
+            background: var(--bg-card-hover);
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .sample-chip:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-wrapper">
+        <div class="header">
+            <h1>Customer Support Assistant</h1>
+        </div>
+
+        <!-- Sample Questions Container -->
+        <div class="sample-questions" id="sample-questions">
+            <!-- Populated by JS -->
+        </div>
+
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message bot">Hi, I am your Customer support assistant. Please let me know if you
+                    need any assistance.</div>
+            </div>
+            <div class="chat-input-container">
+                <div class="chat-input-row">
+                    <input type="text" class="chat-input" id="chat-input"
+                        placeholder="Ask a question about the rules..." onkeypress="handleChatEnter(event)">
+                    <button class="btn btn-primary" onclick="sendMessage()" id="send-btn">Send</button>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary); text-align: center; font-weight: bold;">
+                    Please ask relevant questions. Helps to improve the customer support. Thanks!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = '/api/v1';
+
+        const SAMPLE_QUESTIONS = [
+            "How old do I have to be to coach?",
+            "Can I be a coach if I'm 19?",
+            "What's the cutoff age for coaching?",
+            "Restrictions on who can lead the team?",
+            "Is there a minimum age requirement for coaches?",
+            "What does Rule 1102 say about age?",
+            "Can a team be led by a teenager?",
+            "Who can be a hunt seat coach?",
+            "Do I need insurance to be a coach?",
+            "What are the requirements for a head coach?",
+            "Can a college have multiple coaches?",
+            "Can I substitute a coach for a show?",
+            "What is the deadline for coach membership?",
+            "Do coaches need to sign a liability waiver?",
+            "Is USHJA membership required for coaches?",
+            "How many points to qualify for regionals?",
+            "What is the rule for point riders?",
+            "Can I use a martingale in flat classes?",
+            "Are flash nosebands allowed?",
+            "What happens if a rider falls off?",
+            "Can I re-ride if my horse is lame?",
+            "What is the weight limit for horses?",
+            "Who determines if a horse is suitable?",
+            "Can I school my horse before the show?",
+            "What are the rules for warm-up limitations?",
+            "Are spurs allowed in all classes?",
+            "How do I protest a judge's decision?"
+        ];
+
+        // Initialize Sample Questions
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Initializing Sample Questions...");
+            const sampleContainer = document.getElementById('sample-questions');
+
+            if (!sampleContainer) {
+                console.error("Sample questions container not found!");
+                return;
+            }
+
+            SAMPLE_QUESTIONS.forEach(q => {
+                const chip = document.createElement('div');
+                chip.className = 'sample-chip';
+                chip.textContent = q;
+                chip.onclick = () => {
+                    const input = document.getElementById('chat-input');
+                    input.value = q;
+                    input.focus();
+                };
+                sampleContainer.appendChild(chip);
+            });
+            console.log("Sample Questions loaded:", SAMPLE_QUESTIONS.length);
+        });
+
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const btn = document.getElementById('send-btn');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            addMessage(text, 'user');
+            input.value = '';
+
+            // Disable interactions
+            input.disabled = true;
+            btn.disabled = true;
+            btn.innerHTML = '<div class="spinner"></div>';
+
+            try {
+                // Using POST for query param safety, though previously it was GET?query=... 
+                // Wait, previous code used POST to /chat?query=... which is a bit unusual properly should be body but let's stick to existing API contract.
+                // Re-checking previous code: fetch(`${API_URL}/chat?query=${encodeURIComponent(text)}`, { method: 'POST' });
+
+                const res = await fetch(`${API_URL}/chat?query=${encodeURIComponent(text)}`, {
+                    method: 'POST'
+                });
+                const data = await res.json();
+
+                if (res.ok) {
+                    addMessage(data.answer, 'bot', data.metrics);
+                } else {
+                    addMessage("Error: " + (data.detail || "Unknown error"), 'bot');
+                }
+            } catch (e) {
+                addMessage("Error connecting to server. Please try again later.", 'bot');
+                console.error(e);
+            } finally {
+                // Re-enable interactions
+                input.disabled = false;
+                btn.disabled = false;
+                btn.innerHTML = 'Send';
+                input.focus();
+            }
+        }
+
+        function addMessage(text, sender, metrics = null) {
+            const div = document.createElement('div');
+            div.className = `message ${sender}`;
+
+            // Format links or bold text if needed (simple replacement)
+            // But since the bot returns markdown-like format sometimes, let's keep it simple for now as per requirements
+            // Previous implementation just set innerHTML = text
+
+            // Since we expect newlines in rulebook answers, we should ensure they render.
+            // .message css has white-space: pre-wrap
+
+            div.textContent = text; // Safer than innerHTML for user input, but bot input might have formatting?
+
+            // If bot is sending structured text, textContent is better to avoid XSS, 
+            // but if we want simple bolding <b> we might need innerHTML.
+            // Let's use innerHTML but be careful. 
+            // Actually, let's stick to innerHTML for bot to allow <br> if needed, though pre-wrap handles \n.
+            // For now, textContent is safer and cleaner unless we parse Markdown.
+
+            if (sender === 'bot') {
+                // Convert newlines to breaks just in case pre-wrap isn't enough or we want to support basic formatting?
+                // No, CSS pre-wrap is best.
+                div.innerText = text;
+            } else {
+                div.innerText = text;
+            }
+
+            if (metrics) {
+                // Determine confidence indicator
+                // const confidenceColor = metrics.confidence === 'high' ? 'green' : (metrics.confidence === 'medium' ? 'orange' : 'red');
+
+                // Add meta info
+                const metaDiv = document.createElement('div');
+                metaDiv.className = 'message-meta';
+                metaDiv.innerHTML = `⚡ ${metrics.total_time_ms}ms | 🔍 ${metrics.chunks_retrieved} chunks`;
+                div.appendChild(metaDiv);
+            }
+
+            document.getElementById('messages').appendChild(div);
+            document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+        }
+
+        function handleChatEnter(e) {
+            if (e.key === 'Enter') sendMessage();
+        }
+    </script>
+</body>
+
+</html>

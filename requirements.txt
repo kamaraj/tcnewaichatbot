@@ -1,0 +1,34 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+redis==5.0.1
+sqlalchemy==2.0.25
+chromadb==0.4.22
+numpy<2.0.0
+pypdf==4.0.1
+langchain-core
+langchain-community
+langchain-ollama
+langchain-chroma
+langchain-openai
+langchain-text-splitters
+python-multipart
+pydantic-settings
+uuid
+
+# Testing
+pytest==8.0.0
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+httpx==0.26.0
+faker==22.5.1
+
+# Observability & Metrics
+opentelemetry-api==1.22.0
+opentelemetry-sdk==1.22.0
+opentelemetry-instrumentation-fastapi==0.43b0
+opentelemetry-instrumentation-sqlalchemy==0.43b0
+opentelemetry-instrumentation-httpx==0.43b0
+opentelemetry-exporter-otlp==1.22.0
+opentelemetry-exporter-prometheus==0.43b0
+prometheus-client==0.19.0
+
