@@ -1,5 +1,5 @@
 """API routes module."""
 
-from .routes import router
+from .endpoints import router
 
 __all__ = ["router"]
