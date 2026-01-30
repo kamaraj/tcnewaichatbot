@@ -7,7 +7,7 @@ data/
 *.json
 *.csv
 *.md
-frontend/node_modules/
+frontend/
 tests/
 .pytest_cache/
 Chatgpturl.txt
@@ -24,3 +24,4 @@ PRODUCTION_GUIDE.md
 DEPLOY_LINUX.md
 nixpacks.toml
 railway.json
+app/TCBot.code-workspace
