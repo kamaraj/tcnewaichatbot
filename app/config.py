@@ -2,7 +2,7 @@ import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    APP_NAME: str = "TCBot RAG"
+    APP_NAME: str = "IHSA Rulebook AI"
     API_V1_STR: str = "/api/v1"
     
     # Database (SQLite)
@@ -11,12 +11,8 @@ class Settings(BaseSettings):
     if os.environ.get("VERCEL"):
         SQLITE_URL = "sqlite:////tmp/sql_app.db"
     
-    # Redis
-    REDIS_URL: str = "redis://localhost:6379/0"
-    
-    # Vector DB (FAISS/Chroma)
+    # Vector DB (ChromaDB only)
     CHROMA_PERSIST_DIRECTORY: str = "./data/chroma"
-    FAISS_INDEX_PATH: str = "./data/faiss_index"
     
     # LLM (Ollama)
     OLLAMA_BASE_URL: str = "http://localhost:11434"
@@ -40,5 +36,4 @@ settings = Settings()
 # Ensure directories exist (Skip on Vercel as it is read-only)
 if not os.environ.get("VERCEL"):
     os.makedirs(settings.CHROMA_PERSIST_DIRECTORY, exist_ok=True)
-    os.makedirs(settings.FAISS_INDEX_PATH, exist_ok=True)
     os.makedirs(settings.UPLOAD_DIR, exist_ok=True)

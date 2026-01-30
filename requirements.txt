@@ -8,6 +8,8 @@ langchain-core
 langchain-openai
 langchain-text-splitters
 langchain-experimental
+langchain-chroma
+chromadb
 python-multipart
 pydantic-settings
 pypdf
