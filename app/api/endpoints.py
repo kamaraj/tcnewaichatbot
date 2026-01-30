@@ -73,10 +73,17 @@ async def chat(query: str = None, body: ChatRequest = None, db: Session = Depend
     if not query_text:
         raise HTTPException(status_code=400, detail="Query cannot be empty")
     
+    if not settings.OPENAI_API_KEY:
+        raise HTTPException(
+            status_code=500, 
+            detail="OPENAI_API_KEY is not configured in environment variables. Please add it to Vercel settings."
+        )
+    
     try:
         result = await generate_answer(query_text, db)
         return result
     except Exception as e:
+        print(f"❌ Chat Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/documents")

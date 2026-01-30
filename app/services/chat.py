@@ -173,29 +173,17 @@ async def generate_answer(query: str, db: Session = None):
     print(f"📝 Original query: {query}")
     print(f"🔍 Expanded query: {expanded_query[:100]}...")
     
-    # ========== STEP 2: HYBRID RETRIEVAL ==========
-    # First, do similarity search with expanded query
+    # ========== STEP 2: RETRIEVAL ==========
     start_retrieval = time.time()
     
-    # Retrieve more documents with the expanded query
-    # and use MMR to ensure we get a variety of rule sections
-    retriever = vector_store.as_retriever(
-        search_type="mmr",
-        search_kwargs={
-            "k": 18,           # Retrieve even more
-            "fetch_k": 70,     # Scan more for better coverage
-            "lambda_mult": 0.4 # Slightly more diversity
-        }
-    )
-    
-    # Get documents using the expanded query for better recall
-    all_docs = vector_store.similarity_search(expanded_query, k=18)
+    # Get fewer documents for faster processing and lower token usage
+    all_docs = vector_store.similarity_search(expanded_query, k=10)
     
     # ========== STEP 3: RE-RANK BY KEYWORDS ==========
     reranked_docs = rerank_by_keywords(all_docs, query)
     
-    # Take top 12 after re-ranking for better context window usage
-    top_docs = reranked_docs[:12]
+    # Take top 5 after re-ranking for better context window usage and faster generation
+    top_docs = reranked_docs[:5]
     
     retrieval_time = (time.time() - start_retrieval) * 1000
     

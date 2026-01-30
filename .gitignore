@@ -7,3 +7,5 @@ data/chroma/
 data/uploads/
 .pytest_cache/
 node_modules/
+.vercel
+.env*.local

@@ -81,7 +81,7 @@ def process_document(file_path: str, doc_id: int, db: Session):
                     "\nSection ",  # Section headers
                     "\nARTICLE ",  # Article headers
                     "\nRule ",  # Rule headers
-                    "\n\d+\.",  # Numbered items
+                    r"\n\d+\.",  # Numbered items
                     "\n",  # Single newlines
                     ". ",  # Sentences
                     " ",  # Words

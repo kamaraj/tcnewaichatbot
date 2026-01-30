@@ -53,15 +53,31 @@ class SystemMetrics(Base):
     metric_value = Column(Float)
     recorded_at = Column(DateTime, default=datetime.utcnow)
     
-engine = create_engine(settings.SQLITE_URL, connect_args={"check_same_thread": False})
+try:
+    engine = create_engine(settings.SQLITE_URL, connect_args={"check_same_thread": False})
+    # Test connection
+    with engine.connect() as conn:
+        pass
+except Exception as e:
+    print(f"⚠️ Initial database connection failed: {e}. Falling back to in-memory database.")
+    engine = create_engine("sqlite:///:memory:", connect_args={"check_same_thread": False})
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def init_db():
-    Base.metadata.create_all(bind=engine)
+    try:
+        Base.metadata.create_all(bind=engine)
+        print("✅ Database tables created/verified")
+    except Exception as e:
+        print(f"❌ Failed to initialize database tables: {e}")
 
 def get_db():
-    db = SessionLocal()
     try:
+        db = SessionLocal()
         yield db
+    except Exception as e:
+        print(f"❌ get_db failed: {e}")
+        yield None
     finally:
-        db.close()
+        if 'db' in locals() and db:
+            db.close()

@@ -3,8 +3,13 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
-data/
-*.json
+# Avoid ignoring the vector index and essential files
+!data/vector_index.json
+!data/faiss_index/
+data/chroma/
+data/uploads/
+# but keep other large/volatile data ignored
+data/*.db
 *.csv
 *.md
 frontend/
