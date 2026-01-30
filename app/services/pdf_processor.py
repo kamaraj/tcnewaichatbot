@@ -6,7 +6,7 @@ Handles text extraction, cleaning, and chunking of PDF documents.
 import os
 import re
 import hashlib
-import fitz  # PyMuPDF
+import pypdf
 from typing import List, Dict, Any
 from dataclasses import dataclass
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -35,42 +35,40 @@ class PDFProcessor:
     """Process PDF files for RAG pipeline."""
     
     def __init__(self):
+        # Default settings if not provided
+        chunk_size = getattr(settings, "chunk_size", 1000)
+        chunk_overlap = getattr(settings, "chunk_overlap", 200)
+        
         self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=settings.chunk_size,
-            chunk_overlap=settings.chunk_overlap,
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
             length_function=len,
             separators=["\n\n", "\n", ". ", " ", ""]
         )
     
     def extract_text_from_pdf(self, file_path: str) -> List[Dict[str, Any]]:
         """
-        Extract text from PDF with page-level metadata.
-        
-        Args:
-            file_path: Path to the PDF file
-            
-        Returns:
-            List of dicts with 'text' and 'page' keys
+        Extract text from PDF with page-level metadata using pypdf.
         """
         pages = []
         
         try:
-            doc = fitz.open(file_path)
-            
-            for page_num, page in enumerate(doc, start=1):
-                text = page.get_text("text")
+            with open(file_path, "rb") as f:
+                reader = pypdf.PdfReader(f)
                 
-                # Clean the text
-                text = self._clean_text(text)
-                
-                if text.strip():
-                    pages.append({
-                        "text": text,
-                        "page": page_num
-                    })
-            
-            doc.close()
-            
+                for page_num, page in enumerate(reader.pages, start=1):
+                    text = page.extract_text()
+                    
+                    if text:
+                        # Clean the text
+                        text = self._clean_text(text)
+                        
+                        if text.strip():
+                            pages.append({
+                                "text": text,
+                                "page": page_num
+                            })
+        
         except Exception as e:
             raise RuntimeError(f"Failed to extract text from PDF: {str(e)}")
         

@@ -23,34 +23,20 @@ app.add_middleware(
 )
 
 
-# ==================== OBSERVABILITY ====================
-try:
-    from app.observability import (
-        setup_telemetry, get_metrics_endpoint,
-        record_document_upload, record_query
-    )
-    
-    # Setup OpenTelemetry instrumentation
-    setup_telemetry(app, engine)
-    
-    @app.get("/metrics")
-    def metrics():
-        """Prometheus metrics endpoint"""
-        return get_metrics_endpoint()
-    
-    OBSERVABILITY_ENABLED = True
-except ImportError as e:
-    print(f"Observability not fully configured: {e}")
-    OBSERVABILITY_ENABLED = False
+# ==================== OBSERVABILITY (DISABLED FOR VERCEL) ====================
+OBSERVABILITY_ENABLED = False
+def record_document_upload(success: bool): pass
+def record_query(persona: str, confidence: str, times: dict, chunks_retrieved: int): pass
 
 # ==================== STARTUP ====================
 @app.on_event("startup")
 def on_startup():
-    init_db()
-    print("✅ Database initialized")
-    if OBSERVABILITY_ENABLED:
-        print("✅ OpenTelemetry instrumentation active")
-        print("✅ Prometheus metrics available at /metrics")
+    try:
+        init_db()
+        print("✅ Database initialized")
+    except Exception as e:
+        print(f"❌ Database initialization failed: {e}")
+        # On Vercel, continue anyway as we primarily use FAISS for search
 
 # ==================== ROUTES ====================
 app.include_router(api_router, prefix=settings.API_V1_STR)

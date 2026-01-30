@@ -1,10 +1,9 @@
 import os
 import time
 import re
-# Imports made local to process_document to allow core app to run without these heavy dependencies on Vercel
-# from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-# from langchain_experimental.text_splitter import SemanticChunker
+from langchain_experimental.text_splitter import SemanticChunker
 from app.services.vector import add_documents_to_vector_store
 from app.services.utils import get_embeddings
 from app.models.db import Document
