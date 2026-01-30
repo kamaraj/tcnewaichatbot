@@ -37,6 +37,8 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-# Ensure directories exist
-os.makedirs(settings.CHROMA_PERSIST_DIRECTORY, exist_ok=True)
-os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
+# Ensure directories exist (Skip on Vercel as it is read-only)
+if not os.environ.get("VERCEL"):
+    os.makedirs(settings.CHROMA_PERSIST_DIRECTORY, exist_ok=True)
+    os.makedirs(settings.FAISS_INDEX_PATH, exist_ok=True)
+    os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
