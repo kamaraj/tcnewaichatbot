@@ -72,12 +72,9 @@ def init_db():
         print(f"❌ Failed to initialize database tables: {e}")
 
 def get_db():
+    db = SessionLocal()
     try:
-        db = SessionLocal()
         yield db
-    except Exception as e:
-        print(f"❌ get_db failed: {e}")
-        yield None
     finally:
-        if 'db' in locals() and db:
-            db.close()
+        db.close()
+
