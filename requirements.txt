@@ -9,7 +9,7 @@ langchain-openai==0.1.25
 langchain-text-splitters==0.2.4
 langchain-experimental==0.0.65
 langchain-chroma==0.1.4
-chromadb==0.5.5
+chromadb==0.5.3
 python-multipart
 pydantic-settings
 pypdf
