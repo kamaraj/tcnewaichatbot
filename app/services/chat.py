@@ -4,6 +4,7 @@ import re
 from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 from langchain.chains import LLMChain
+from langchain.chains.combine_documents import create_stuff_documents_chain
 from app.services.utils import get_llm
 from app.services.vector import get_vector_store
 from app.models.db import QueryLog

@@ -1,21 +1,29 @@
 import os
 from app.config import settings
-from app.services.utils import get_embeddings
 
-# ChromaDB-based vector store
+# Cache for vector store
 _vector_store_cache = None
 
 def get_vector_store():
     """
-    ChromaDB-based vector store for robust document retrieval.
-    Caches the store instance to avoid reloading.
+    Get the appropriate vector store based on environment.
+    Uses ChromaDB locally, serverless version on Vercel.
     """
     global _vector_store_cache
     
     if _vector_store_cache is not None:
         return _vector_store_cache
     
+    # Use serverless version on Vercel (lighter weight)
+    if os.environ.get("VERCEL"):
+        from app.services.vector_serverless import ServerlessVectorStore
+        _vector_store_cache = ServerlessVectorStore(api_key=settings.OPENAI_API_KEY)
+        print("✅ Using ServerlessVectorStore for Vercel deployment")
+        return _vector_store_cache
+    
+    # Use ChromaDB locally - import dependencies here to avoid loading on Vercel
     from langchain_chroma import Chroma
+    from app.services.utils import get_embeddings
     
     persist_directory = settings.CHROMA_PERSIST_DIRECTORY
     
@@ -47,7 +55,12 @@ def get_vector_store():
 def add_documents_to_vector_store(chunks):
     """
     Add document chunks to ChromaDB vector store.
+    Note: This only works locally, not on Vercel.
     """
+    if os.environ.get("VERCEL"):
+        print("⚠️ Cannot add documents on Vercel - read-only deployment")
+        return False
+    
     store = get_vector_store()
     
     # ChromaDB's add_documents handles embedding internally

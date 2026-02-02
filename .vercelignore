@@ -3,22 +3,35 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
-# Avoid ignoring the vector index and essential files
-!data/vector_index.json
-!data/faiss_index/
+.env.local
+
+# Include the lightweight vector index for serverless
+!data/vector_index.pkl
+
+# Exclude heavy ChromaDB data (not needed for serverless)
 data/chroma/
+
+# Ignore uploads (user data, not needed for deployment)
 data/uploads/
-# but keep other large/volatile data ignored
+
+# Ignore local SQLite db (will be recreated in /tmp on Vercel)
 data/*.db
+
+# Ignore test files and caches
 *.csv
-*.md
-frontend/
 tests/
 .pytest_cache/
+pytest.ini
+
+# Ignore documentation and guides
 Chatgpturl.txt
 chatgpthistory.md
 expectedanswer.txt
 retrieval_logs.json
+*.md
+!README.md
+
+# Ignore local development files
 *.bat
 *.sh
 docker-compose.yml
@@ -29,4 +42,28 @@ PRODUCTION_GUIDE.md
 DEPLOY_LINUX.md
 nixpacks.toml
 railway.json
+railway.toml
+
+# Ignore workspace files
 app/TCBot.code-workspace
+
+# Ignore debug and test scripts
+debug_*.py
+inspect_*.py
+capture_*.py
+evaluate_*.py
+generate_*.py
+reindex*.py
+test_*.py
+run*.py
+
+# Ignore frontend if separate
+frontend/
+
+# Ignore response and report files
+*_response.json
+eval_report.json
+
+# Ignore the heavy LangChain chat service (using serverless version)
+# app/services/chat.py - keep for local, serverless version used on Vercel
+# app/services/vector_store.py - not needed on Vercel

@@ -2,8 +2,6 @@ from fastapi import APIRouter, UploadFile, File, BackgroundTasks, Depends, HTTPE
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from app.models.db import get_db, Document, QueryLog
-from app.services.document import process_document
-from app.services.chat import generate_answer
 from app.config import settings
 from pydantic import BaseModel
 from typing import Optional
@@ -11,6 +9,13 @@ import shutil
 import os
 import uuid
 import time
+
+# Conditional import based on environment
+if os.environ.get("VERCEL"):
+    from app.services.chat_serverless import generate_answer_serverless as generate_answer
+else:
+    from app.services.chat import generate_answer
+    from app.services.document import process_document
 
 router = APIRouter()
 
@@ -23,6 +28,13 @@ async def upload_file(
     file: UploadFile = File(...),
     db: Session = Depends(get_db)
 ):
+    # Document upload is not supported on Vercel (read-only filesystem)
+    if os.environ.get("VERCEL"):
+        raise HTTPException(
+            status_code=400, 
+            detail="Document upload is not supported on Vercel. Please use the local development environment to upload documents."
+        )
+    
     start_time = time.time()
     
     if not file.filename.endswith(".pdf"):
